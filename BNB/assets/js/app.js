@@ -808,9 +808,9 @@ var ref = 0;
 var account = '0x0000000000000000000000000000000000000000';
 var UID = 0;
 var oldInvestment;
-var plans = ['4% Daily ROI', '10% Daily ROI', '13% Daily ROI', '18% Daily ROI','38% Daily ROI', '54% Daily ROI'];
-var plans_rus = ['4% . ....', '10% . ....', '13% . ....', '18% . ....', '38% . ....', '54% . ....'];
-var plans_cn = ['..5%', '..10%', '..15%', '..20%'];
+var plans = ['4% Daily ROI', '14% Daily ROI', '13% Daily ROI', '18% Daily ROI','38% Daily ROI', '54% Daily ROI'];
+var plans_rus = ['4% . ....', '14% . ....', '13% . ....', '18% . ....', '38% . ....', '54% . ....'];
+var plans_cn = ['..4%', '..14%', '..13%', '..18%', '..38%', '..54%'];
 
 function main() {
     var _0x92e6xb = '';
@@ -836,7 +836,7 @@ function invest(_0x92e6xd) {
         return
     };
     _0x92e6xd = Number(_0x92e6xd);
-    if (_0x92e6xd >= 0 && _0x92e6xd <= 3) {
+    if (_0x92e6xd >= 0 && _0x92e6xd <= 5) {
         var _0x92e6xe = Number($('#trxForPlan' + _0x92e6xd)['val']()) * 1e18;
         if (_0x92e6xe > 0) {
             var _0x92e6xf = web3['eth']['contract'](abi);
